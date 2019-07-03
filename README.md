@@ -35,3 +35,6 @@ docker run --shm-size=256m --detach -p 80:8080 nethacker/ubuntu-18-04-flask-guni
 ## Testing
 You should be able to go to localhost port 80 in a browser and get a red "Hello World" message
 
+## Notes
+- --shm-size is to set a bigger shared memory size. Gunicorn has a config entry to use shared memory (/dev/shm) vs disk (/tmp) for health checks to avoid timeouts.
+- In the /home/ubuntu you can see all the files for Flask as well as the Gunicorn config.
