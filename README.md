@@ -1,5 +1,5 @@
 # ubuntu-flask-gunicorn-docker
-A scalable Flask application using Gunicorn on Ubuntu 18.04 example. You can customize this to your liking or test the
+A scalable Flask application using Gunicorn on Ubuntu 18.04 Docker example. You can customize this to your liking or test the
 pre-built Docker image example.
 
 ## Contents
