@@ -5,7 +5,7 @@
 # SOURCE: https://github.com/nethacker/ubuntu-flask-gunicorn-docker
 
 FROM nethacker/ubuntu-18-04-flask-gunicorn:1.0
-RUN pip install gunicorn flask && useradd -m ubuntu
+RUN useradd -m ubuntu
 ENV HOME=/home/ubuntu
 USER ubuntu
 COPY app01.py wsgi.py gunicorn_config.py /home/ubuntu/
