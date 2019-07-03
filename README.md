@@ -1,8 +1,6 @@
 # ubuntu-flask-gunicorn-docker
 
-# A scalable Flask application using Gunicorn on Ubuntu 18.04 example
-
-**Contents**
+## Contents
 - Ubuntu 18.04
 - Python 3.7.3
 - Flask 1.0.3
@@ -10,7 +8,7 @@
 - Gunicorn 19.9.0
 - Example "Hello World" Flask App Running on Port 8080
 
-## Build the image
+## Build/Customize the image
 If you would like to build the image from the Dockerfile.
 ```
 docker build -t nethacker/ubuntu-flask-gunicorn-docker:latest .
@@ -23,11 +21,11 @@ docker pull nethacker/ubuntu-18-04-flask-gunicorn-example:latest
 ```
 
 ## Start a container
-If you followed the build path above.
+If you followed the Build path above.
 ```
 docker run --shm-size=256m --detach -p 80:8080 nethacker/ubuntu-flask-gunicorn-docker:latest
 ```
-If you followed the pull path above.
+If you followed the Pull path above.
 ```
 docker run --shm-size=256m --detach -p 80:8080 nethacker/ubuntu-18-04-flask-gunicorn-example:latest
 ```
