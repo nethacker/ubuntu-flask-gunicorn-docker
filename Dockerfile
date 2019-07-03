@@ -4,7 +4,7 @@
 # DESCRIPTION: A scalable Flask application using Gunicorn on Ubuntu 18.04 Docker example.
 # SOURCE: https://github.com/nethacker/ubuntu-flask-gunicorn-docker
 
-FROM nethacker/ubuntu-18-04-python-3:python-3.7.3
+FROM nethacker/ubuntu-18-04-flask-gunicorn:1.0
 RUN pip install gunicorn flask && useradd -m ubuntu
 ENV HOME=/home/ubuntu
 USER ubuntu
